@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/vue.js"></script>
+    <link rel="stylesheet" href="../css/product-details.css"/>
+    <link rel="stylesheet" href="../css/footer.css"/>
+    <link rel="stylesheet" href="../css/header.css"/>
+</head>
+<body>
+<!--header-->
+<div class="headersize">
+    <div class="header1">
+        <ul class="breadcrumb float-left headersmall bg-white headerleftnav">
+            <li class="breadcrumb-item"><a href="#" class="headergray">关于铜师傅</a></li>
+            <li class="breadcrumb-item"><a href="#" class="headergray">工艺精粹</a></li>
+            <li class="breadcrumb-item"><a href="#" class="headergray">动态</a></li>
+        </ul>
+        <ul class="breadcrumb float-right headersmall bg-white headerrightnav ">
+            <li class="breadcrumb-item"><a target="_blank" href="file:///C:/Users/Hubery/Desktop/Hubery/Project1/tsf1/login.html" class="headergray" >登录</a></li>
+            <li class="breadcrumb-item"><a target="_blank" href="file:///C:/Users/Hubery/Desktop/Hubery/Project1/tsf1/register.html" class="headergray">注册</a></li>
+        </ul>
+    </div>
+</div> 
+<div class="clear"></div>
+<div class="headersize2">
+    <div class="header-mid">
+        <img src="../image/logo.png-v=v31.png"/>
+        <div class="fr header-mr">
+            <input class="searchbox fl"  placeholder="  搜索铜师傅作品" type="text"/>
+            <div class="search fl"></div>
+            <a class="fr shopcar">购物车</a>
+        </div>
+        <div class='clear'></div>
+        <div class='nav'>
+            <div class="left fl">
+                <a href="javascript:;" class="pro-all" id='s'>作品分类</a>
+                <a href="product.html" class="fr">全部作品</a>
+            </div> 
+            <script>
+                var s = document.getElementById('s');
+                s.onclick = function(){
+                    var a = document.getElementById('asid');
+                    if(a.style.display=='none'){
+                        a.style.display = 'block';
+                    }else{
+                        a.style.display = 'none';
+                    }
+                }
+            </script>
+            <div class="right fr">
+                <ul class="d-flex justify-content-around list-unstyled">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="#">新品上架</a></li>
+                    <li><a href="#">热卖爆品</a></li>
+                    <li><a href="#">限量极品</a></li>
+                    <li><a href="#">铜粉最爱</a></li>
+                    <li><a href="#">铜板</a></li>
+                    <li><a href="#">铜粉部落</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="headersize3" id='asid'>
+    <div class="w-1240">
+        <div class=clear></div>
+        <div class="leftnav1 fl">
+            <ul class="list-unstyled">
+                <li>
+                    <p><a target="_blank" href="#">佛缘善结</a></p>
+                    <div class="abox">
+                        <a target="_blank" href="#">西方三圣</a>
+                        <a target="_blank" href="#">观音</a>
+                        <a target="_blank" href="#">达摩</a>
+                        <a target="_blank" href="#">沙弥</a>
+                    </div>
+                    <a target="_blank" href="#" class="fr more">更多</a>
+                </li>
+                <li>
+                    <p><a target="_blank" href="#">镇宅旺财</a></p>
+                    <div class="abox">
+                        <a target="_blank" href="#">关公</a>
+                        <a target="_blank" href="#">财神</a>
+                        <a target="_blank" href="#">门神</a>
+                        <a target="_blank" href="#">貔貅</a>
+                    </div>
+                    <a target="_blank" href="#" class="fr more">更多</a>
+                </li>
+                <li>
+                    <p><a target="_blank" href="#">家居饰品</a></p>
+                    <div class="abox">
+                        <a target="_blank" href="#">人物</a>
+                        <a target="_blank" href="#">动物</a>
+                        <a target="_blank" href="#">植物</a>
+                        <a target="_blank" href="#">建筑</a>
+                    </div>
+                    <a target="_blank" href="#" class="fr more">更多</a>
+                </li>
+                <li>
+                    <p><a target="_blank" href="#">日常用品</a></p>
+                    <div class="abox">
+                        <a target="_blank" href="#">香炉香插</a>
+                        <a target="_blank" href="#">文房四宝</a>
+                    </div>
+                    <a target="_blank" href="#" class="fr more">更多</a>
+                </li>
+                <li>
+                    <p><a target="_blank" href="#">限量作品</a></p>
+                    <div class="abox">
+                        <a target="_blank" href="#">关公</a>
+                        <a target="_blank" href="#">西方三圣</a>
+                        <a target="_blank" href="#">我爱飞行</a>
+                    </div>
+                    <a target="_blank" href="#" class="fr more">更多</a>
+                </li>
+                <li>
+                    <p><a target="_blank" href="#">秒杀特区</a></p>
+                    <div class="abox">
+                        <a target="_blank" href="#">铜葫芦</a>
+                        <a target="_blank" href="#">马到成功</a>
+                        <a target="_blank" href="#">招财金蟾</a>
+                    </div>
+                    <a target="_blank" href="#" class="fr more">更多</a>
+                </li>
+                <li class="border-0">
+                    <p><a target="_blank" href="#" class="abox">预售作品</a></p>
+                    <a target="_blank" href="#" class="fr more">更多</a>
+                </li>
+            </ul>
+            <div class='clear'></div>
+        </div>
+    </div>
+</div>
+<!--details-->
+<div class="w-1240">
+    <div class="bread">
+        <a href="javascript:;" class="fl">首页</a>
+        <span class="fl fst"> &gt; </span>
+        <a href="javascript:;" class="fl">作品列表</a>
+        <span class="fl fst"> &gt;</span>
+        <a href="javascript:;" class="fl">金如意（金箔）【预售】</a>
+    </div>
+    <div class="pro-details">
+        <div class="mess">
+            <div class="left-pro-img fl">
+                <div class="big-img">
+                    <img src="../image/14780020003902dn8hm.jpg" alt=""/>
+                </div>
+                <div class="img-list">
+                    <ul class="img-ul">
+                        <li><img src="../image/14780020069756dz5lx.jpg" alt=""/></li>
+                        <li><img src="../image/14780020069494dz5lx.jpg" alt=""/></li>
+                        <li><img src="../image/14780020070859sayjn.jpg" alt=""/></li>
+                        <li><img src="../image/14780020071047sayjn.jpg" alt=""/></li>
+                        <li><img src="../image/14780020071246sayjn.jpg" alt=""/></li>
+                    </ul>
+                </div>
+                <span class="butn prev"></span>
+                <span class="butn next"></span>
+            </div>
+            <div class="right-pro-con fr">
+                <span class="font-name">金如意（金箔）【预售】</span>
+                <div class="font-type">
+                    <span>全黄铜，24k真金金箔贴制</span>
+                    <div class="clear"></div>
+                </div>
+                <p class="price-sc">
+                    收藏价：
+                    <span class="yuan">
+                     4700 元
+                    </span>
+                </p>
+                <p class="price-yh">优惠价:</p>
+                <p class="price">1199 <span class="f12">元</span></p>
+                <div class="evalute-mess">
+                    <div class="star fl star5"></div>
+                    <span class="fl font">已有0人评价</span>
+                    <span class="fl font">已售2件</span>
+                </div>
+                <div class="linkbox-join">
+                    <img src="../image/btn_3.jpg" class="fl" alt=""/>
+                    <span class="fl collect "></span>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="center-nav">
+            <span class="hover">作品详情</span>
+            <span>作品规格</span>
+            <span>作品评价(0)</span>
+            <span>作品提问</span>
+        </div>
+        <div class="img-intr">
+            <img src="../image/1478001716298958cTMx.jpg" alt=""/>
+            <img src="../image/147800172513171651Fr.jpg" alt=""/>
+            <img src="../image/1478001800993241ctHc.jpg" alt=""/>
+            <img src="../image/1478001800993241M05X.jpg" alt=""/>
+            <img src="../image/1478001800993241wR6x.jpg" alt=""/>
+            <img src="../image/1478001800993241vAI6.jpg" alt=""/>
+        </div>
+        <p class="spec">作品规格</p>
+        <div class="spec-intr">
+            <table>
+                <tr>
+                    <td width='10%'>作品名称</td>
+                    <td width='40%'>金如意（金箔）</td>
+                    <td width='10%'>作品材质</td>
+                    <td width='40%'>特A级精黄铜</td>
+                </tr>
+                <tr>
+                    <td>作品编号</td>
+                    <td>2060059A</td>
+                    <td>表面处理</td>
+                    <td>24k真金金箔贴制</td>
+                </tr>
+                <tr>
+                    <td>作品尺寸</td>
+                    <td>高约13.5厘米</td>
+                    <td>作品净重</td>
+                    <td>约2.8公斤</td>
+                </tr>
+                <tr>
+                    <td>包装材质</td>
+                    <td>布袋+Insetapak 防震材料+纸盒+快递纸箱</td>
+                    <td>是否限量</td>
+                    <td>否</td>
+                </tr>
+            </table>
+        </div>
+        <div class="details-bot">
+            <div class="bot-left">
+                <div class="left-first">热卖产品</div>
+                <div class="list">
+                    <ul id='det'>
+                        <script>
+                            $.ajax({
+                                url:'http://127.0.0.1:3000/hot',
+                                type:'get',
+                                dataType:'json'
+                            }).then(result=>{
+                                var html = '';
+                                for(var i = 0;i<8;i++){
+                                    var tit = result.data[i].title;
+                                    var pri1 = result.data[i].price2;
+                                    var pics = result.data[i].pic;
+                                    var hre = result.data[i].href;
+                                    html+=`<li>
+                                    <span class="fl"><img src="${pics}" alt=""/></span>
+                                    <div class="fr word">
+                                        <a href="${hre}">
+                                            <p class="f16">${tit}</p>
+                                            <p class="f14">${pri1}元</p>
+                                        </a>
+                                    </div>
+                                </li>`
+                                }
+                                var div6 = document.getElementById('det');
+                                div6.innerHTML = html;
+                            })
+                        </script>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="bot-right">
+                <div class="right-first">真实评价</div>
+                <div class="bot-mid">
+                    <div class="left">
+                        <table></table>
+                        <p class="percent">100%</p>
+                        <p class="font">五星评价率</p>
+                    </div>
+                    <div class="right">
+                        <ul class="bot-list">
+                            <li>
+                                <span class="star star5"></span>
+                                <span>0</span>
+                            </li>
+                            <li>
+                                <span class="star star4"></span>
+                                <span>0</span>
+                            </li>
+                            <li>
+                                <span class="star star3"></span>
+                                <span>0</span>
+                            </li>
+                            <li>
+                                <span class="star star2"></span>
+                                <span>0</span>
+                            </li>
+                            <li>
+                                <span class="star star1"></span>
+                                <span>0</span>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="titbox">
+                        <span class="fl f20">作品提问</span>
+                        <a href="http://www.tongshifu.com/product/asklist/279" class="more1 fr">更多提问</a>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="que-send">
+                        <span class="tt">我要提问</span>
+                        <input type="text" class="tw"/>
+                        <button class="sub">提交</button>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="bot-intro" id='app'>
+
+                        <div class="titnav">
+                            <span :class="hover" id='que'>常见问题</span>
+                            <span class='fr' id='ser'>售后服务</span>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="boxs">
+                            <p class="font-weight-bold">如何挑选商品？</p>
+                            <p>点击页面上方“加入购物车”按钮或页面下拉时顶部导航上的“加入购物车”按钮将商品加入购物车，再点击页面右上角的“购物车”前往购物车页面进行结算。</p>
+                            <p class="font-weight-bold">收藏商品功能</p>
+                            <p>点击“收藏按钮”后，由“收藏”变为“★”代表收藏成功，再次点击取消收藏。您可在“个人中心”中的我的收藏查看所有收藏商品。</p>
+                            <p class="font-weight-bold">退换货办理流程</p>
+                            <p>您可拨打客服中心400-8006-045与客服人员沟通，或登录 管网“我的订单” ->“订单详情”下方点击“申请售后服务”并填写相应信息，铜师傅售后客服会为您处理。</p>
+                        </div>
+                        <div class="boxs1">
+                            <p class="font-weight-bold">一、7天无理由退货：</p>
+                            <div class="mb">
+                                <ul>
+                                    <li>1、买家在收货后7天内可享受无理由退货。</li>
+                                    <li>2、买家需确保铜师傅作品及包装未被人为损坏而影响二次销售，否则我们有权拒收。</li>
+                                    <li>3、买家需自行承担退回作品的快递费，因到付费用高昂，我们不接受任何到付方式。</li>
+                                    <li>4、为保证作品运输的安全性和处理的时效性，我们只接受选择下列主流快递公司的退货：顺丰、圆通、中通、申通、韵达，一律不接受选择其他快递公司及选择物流方式的退货。</li>
+                                    <li>5、退货前请先与我们客服联络，寻求帮助。</li>
+                                </ul>
+                            </div>
+                            <p class="font-weight-bold">二、15天免费换货：</p>
+                            <div>1、收货后15天内，发现作品有品质问题的，可与我们客服联络，确认为品质问题的，我们将为您换货并承担所有来回邮费。</div>
+                            <div class="mb">2、收到您退还的作品后，我们会第一时间发运另一件相同的作品给您，如果该作品恰好没有库存，我们将告知您重新生产及发货的时间。</div>
+                            <p class="font-weight-bold">三、退换货办理流程:</p>
+                            <p>您可拨打客服中心400-8006-045与客服人员沟通，或登录 官网“我的订单” ->“订单详情”下方点击“申请售后服务”并填写相应信息，铜师傅售后客服会为您处理。</p>
+                        </div>
+                        <script>
+                            $(".boxs1").hide();
+                                $('#que').click( function(){
+                                    $('.boxs').show();
+                                    $('.boxs1').hide();
+                                });
+                                $('#ser').click( function(){
+                                    $('.boxs1').show();
+                                    $('.boxs').hide();
+                                });
+                            </script>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+<!--footer-->
+<div class="footer">
+    <div class="w-100">
+        <div class="pb-5 border-bottom footer-top">
+            <ul class="list-unstyled d-flex justify-content-around text-center">
+                <li><img src="../image/ico_13.png-v=v31.png"/><p class="mt-3">7天无理由退货</p></li>
+                <li><img src="../image/ico_14.png-v=v31.png"/><p class="mt-3">15天免费换货</p></li>
+                <li><img src="../image/ico_15.png-v=v31.png"/><p class="mt-3">满500元包邮</p></li>
+                <li><img src="../image/ico_16.png-v=v31.png"/><p class="mt-3">铜板</p></li>
+            </ul>
+        </div>
+        <div class="row footer-mid">
+            <div class="col-8">
+                <table class="w-100 text-center">
+                    <tr>
+                        <th>作品展厅</th>
+                        <th>尊享服务</th>
+                        <th>品牌发展</th>
+                        <th>铜粉部落</th>
+                        <th>关于我们</th>
+                    </tr>
+                    <tr>
+                        <td>佛缘善结</td>
+                        <td>售后政策</td>
+                        <td>最新动态</td>
+                        <td>公告专栏</td>
+                        <td>了解我们</td>
+                    </tr>
+                    <tr>
+                        <td>镇宅旺财</td>
+                        <td>自助服务</td>
+                        <td>关于铜器</td>
+                        <td>活动预告</td>
+                        <td>加入我们</td>
+                    </tr>
+                    <tr>
+                        <td>家居饰品</td>
+                        <td>相关下载</td>
+                        <td>精湛工艺</td>
+                        <td>有奖竞猜</td>
+                        <td>联系我们</td>
+                    </tr>
+                    <tr>
+                        <td>日常用品</td>
+                        <td></td>
+                        <td>保养须知</td>
+                        <td>铜粉论坛</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>限量作品</td>
+                        <td></td>
+                        <td></td>
+                        <td>铜道中人</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>秒杀特区</td>
+                        <td></td>
+                        <td></td>
+                        <td>藏品转让</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>预售作品</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-4 w-100 footer-r">
+                <div>
+                    <p class="call">400-8006 045</p>
+                    <p class="time">周一至周日 9：00-22:00</p>
+                    <p class="chat">
+                        <span class="fl">分享到:</span>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bot">
+            <div class="ft-li">
+                <a href="javascript:;">铜师傅首页</a>
+                <a href="javascript:;" class="cen">帮助中心</a>
+                <a href="javascript:;">法律声明</a>
+            </div>
+            <div class="copy">Copyright © 2015 浙ICP备13026271号-1 杭州玺匠文化创意股份有限公司</div>
+            <div class="friendimg">
+                <a target="_blank" href="javascript:;">
+                    <img src="../image/img_54.png-v=v31.png" alt=""/>
+                </a>
+                <a target="_blank" href="javascript:;">
+                    <img src="../image/img_55.png-v=v31.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

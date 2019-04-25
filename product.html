@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>产品列表</title>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/product.css"/>
+    <link rel="stylesheet" href="../css/footer.css"/>
+    <link rel="stylesheet" href="../css/header.css"/>
+</head>
+<body>
+    <div class="headersize">
+            <div class="header1">
+                <ul class="breadcrumb float-left headersmall bg-white headerleftnav">
+                    <li class="breadcrumb-item"><a href="#" class="headergray">关于铜师傅</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="headergray">工艺精粹</a></li>
+                    <li class="breadcrumb-item"><a href="#" class="headergray">动态</a></li>
+                </ul>
+                <ul class="breadcrumb float-right headersmall bg-white headerrightnav ">
+                    <li class="breadcrumb-item"><a target="_blank" href="login.html" class="headergray" >登录</a></li>
+                    <li class="breadcrumb-item"><a target="_blank" href="register.html" class="headergray">注册</a></li>
+                </ul>
+            </div>
+        </div> 
+        <div class="clear"></div>
+        <div class="headersize2">
+            <div class="header-mid">
+                <img src="../image/logo.png-v=v31.png"/>
+                <div class="fr header-mr">
+                    <input class="searchbox fl"  placeholder="  搜索铜师傅作品" type="text"/>
+                    <div class="search fl"></div>
+                    <a class="fr shopcar">购物车</a>
+                </div>
+                <div class='clear'></div>
+                <div class='nav'>
+                    <div class="left fl">
+                        <a href='javascript:;' class="pro-all" id='s'>作品分类</a>
+                        <a href="product.html" class="fr">全部作品</a>
+                    </div> 
+                    <script>
+                        var s = document.getElementById('s');
+                        s.onclick = function(){
+                            console.log(45)
+                            var a = document.getElementById('asid');
+                            if(a.style.display=='none'){
+                                a.style.display = 'block';
+                                console.log("asdsad")
+                            }else{
+                                a.style.display = 'none';
+                                console.log(123)
+                            }
+                        }
+                    </script>
+                    <div class="right fr">
+                        <ul class="d-flex justify-content-around list-unstyled">
+                            <li><a href="index.html">首页</a></li>
+                            <li><a href="#">新品上架</a></li>
+                            <li><a href="#">热卖爆品</a></li>
+                            <li><a href="#">限量极品</a></li>
+                            <li><a href="#">铜粉最爱</a></li>
+                            <li><a href="#">铜板</a></li>
+                            <li><a href="#">铜粉部落</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="headersize3" id='asid' style="display:none;">
+            <div class="w-1240">
+            <div class=clear></div>
+            <div class="leftnav1 fl">
+                <ul class="list-unstyled">
+                    <li>
+                        <p><a target="_blank" href="#">佛缘善结</a></p>
+                        <div class="abox">
+                            <a target="_blank" href="#">西方三圣</a>
+                            <a target="_blank" href="#">观音</a>
+                            <a target="_blank" href="#">达摩</a>
+                            <a target="_blank" href="#">沙弥</a>
+                        </div>
+                        <a target="_blank" href="#" class="fr more">更多</a>
+                    </li>
+                    <li>
+                        <p><a target="_blank" href="#">镇宅旺财</a></p>
+                        <div class="abox">
+                            <a target="_blank" href="#">关公</a>
+                            <a target="_blank" href="#">财神</a>
+                            <a target="_blank" href="#">门神</a>
+                            <a target="_blank" href="#">貔貅</a>
+                        </div>
+                        <a target="_blank" href="#" class="fr more">更多</a>
+                    </li>
+                    <li>
+                        <p><a target="_blank" href="#">家居饰品</a></p>
+                        <div class="abox">
+                            <a target="_blank" href="#">人物</a>
+                            <a target="_blank" href="#">动物</a>
+                            <a target="_blank" href="#">植物</a>
+                            <a target="_blank" href="#">建筑</a>
+                        </div>
+                        <a target="_blank" href="#" class="fr more">更多</a>
+                    </li>
+                    <li>
+                        <p><a target="_blank" href="#">日常用品</a></p>
+                        <div class="abox">
+                            <a target="_blank" href="#">香炉香插</a>
+                            <a target="_blank" href="#">文房四宝</a>
+                        </div>
+                        <a target="_blank" href="#" class="fr more">更多</a>
+                    </li>
+                    <li>
+                        <p><a target="_blank" href="#">限量作品</a></p>
+                        <div class="abox">
+                            <a target="_blank" href="#">关公</a>
+                            <a target="_blank" href="#">西方三圣</a>
+                            <a target="_blank" href="#">我爱飞行</a>
+                        </div>
+                        <a target="_blank" href="#" class="fr more">更多</a>
+                    </li>
+                    <li>
+                        <p><a target="_blank" href="#">秒杀特区</a></p>
+                        <div class="abox">
+                            <a target="_blank" href="#">铜葫芦</a>
+                            <a target="_blank" href="#">马到成功</a>
+                            <a target="_blank" href="#">招财金蟾</a>
+                        </div>
+                        <a target="_blank" href="#" class="fr more">更多</a>
+                    </li>
+                    <li class="border-0">
+                        <p><a target="_blank" href="#" class="abox">预售作品</a></p>
+                        <a target="_blank" href="#" class="fr more">更多</a>
+                    </li>
+                </ul>
+                <div class='clear'></div>
+            </div>
+        </div>
+    </div>
+<div class="w-1240">
+    <div class="bread">
+        <a href="javascript:;" class="fl">首页</a>
+        <span class="fl fst"> &gt; </span>
+        <a href="javascript:;">作品列表</a>
+    </div>
+    <div class="floor">作品列表</div>
+    <div class="list bg-white">
+        <div class="top">
+            <div class="top-nav">
+                <a href="javascript:;" class="hover">铜粉最爱</a>
+                <span class="line">|</span>
+                <a href="javascript:;">最新作品</a>
+                <span class="line">|</span>
+                <a href="javascript:;">价格从高到低</a>
+                <span class="line">|</span>
+                <a href="javascript:;">价格从高到低</a>
+            </div>
+            <div class="top-box">
+                <div class="butn-page fr">
+                    <a href="http://www.tongshifu.com/product/-1/2"><span class="next"></span></a>
+                </div>
+                <span class="num fr">1 / 2</span>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="pro-list">
+            <ul class="flex-wrap" id='cont4'>
+                    <script>
+                        var html = '';
+                        $.ajax({
+                            url:'http://127.0.0.1:3000/contbox',
+                            type:'get',
+                            dataType:'json'
+                        }).then(result=>{
+                            for(var i = 0;i<result.data.length;i++){
+                                var tit = result.data[i].title;
+                                var pri = result.data[i].price;
+                                var pri1 = result.data[i].price1;
+                                var pics = result.data[i].pic;
+                                var hre = result.data[i].href;
+                                html+=`<li>
+                                <div class="pro-box">
+                                    <a href="${hre}">
+                                        <div class="mess-box">
+                                            <span class="name">${tit}</span>
+                                            <span class="price">
+                                                <span class="price1"><span class="num">${pri}</span>元</span>
+                                                <span class="price2">${pri1}元</span>
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <div class="img-box">
+                                        <img src="${pics}" alt=""/>
+                                    </div>
+                                    <div class="butn-box">
+                                        <a href="javascript:;" class="collect">收藏</a>
+                                    </div>
+                                </div>
+                            </li>`
+                            }
+                            var div5 = document.getElementById('cont4');
+                            div5.innerHTML = html;
+                        });
+                        $.ajax({
+                            url:'http://127.0.0.1:3000/hot',
+                            type:'get',
+                            dataType:'json'
+                        }).then(result=>{
+                            for(var i = 0;i<result.data.length-1;i++){
+                                var tit = result.data[i].title;
+                                var pri = result.data[i].price2;
+                                var pics = result.data[i].pic;
+                                var hre = result.data[i].href;
+                                html+=`<li>
+                                <div class="pro-box">
+                                    <a href="${hre}">
+                                        <div class="mess-box">
+                                            <span class="name">${tit}</span>
+                                            <span class="price">
+                                                <span class="price1"><span class="num">${pri}</span>元</span>
+                                                <span class="price2">${pri}元</span>
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <div class="img-box">
+                                        <img src="${pics}" alt=""/>
+                                    </div>
+                                    <div class="butn-box">
+                                        <a href="javascript:;" class="collect">收藏</a>
+                                    </div>
+                                </div>
+                            </li>`}
+                            var div5 = document.getElementById('cont4');
+                            div5.innerHTML += html;
+                        })
+                    </script>
+            </ul>
+            <div class="clear"></div>
+            <div class="page">
+                <div class="pagination">
+                    <a class="active" href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">下一页</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer-->
+<div class="footer">
+    <div class="w-1240">
+        <div class="mb-4 border-bottom footer-top">
+            <ul class="list-unstyled d-flex justify-content-around text-center">
+                <li><img src="../image/ico_13.png-v=v31.png"/><p class="mt-3">7天无理由退货</p></li>
+                <li><img src="../image/ico_14.png-v=v31.png"/><p class="mt-3">15天免费换货</p></li>
+                <li><img src="../image/ico_15.png-v=v31.png"/><p class="mt-3">满500元包邮</p></li>
+                <li><img src="../image/ico_16.png-v=v31.png"/><p class="mt-3">铜板</p></li>
+            </ul>
+        </div>
+        <div class="row footer-mid">
+            <div class="col-8">
+                <table class="w-100 text-center">
+                    <tr>
+                        <th>作品展厅</th>
+                        <th>尊享服务</th>
+                        <th>品牌发展</th>
+                        <th>铜粉部落</th>
+                        <th>关于我们</th>
+                    </tr>
+                    <tr>
+                        <td>佛缘善结</td>
+                        <td>售后政策</td>
+                        <td>最新动态</td>
+                        <td>公告专栏</td>
+                        <td>了解我们</td>
+                    </tr>
+                    <tr>
+                        <td>镇宅旺财</td>
+                        <td>自助服务</td>
+                        <td>关于铜器</td>
+                        <td>活动预告</td>
+                        <td>加入我们</td>
+                    </tr>
+                    <tr>
+                        <td>家居饰品</td>
+                        <td>相关下载</td>
+                        <td>精湛工艺</td>
+                        <td>有奖竞猜</td>
+                        <td>联系我们</td>
+                    </tr>
+                    <tr>
+                        <td>日常用品</td>
+                        <td></td>
+                        <td>保养须知</td>
+                        <td>铜粉论坛</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>限量作品</td>
+                        <td></td>
+                        <td></td>
+                        <td>铜道中人</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>秒杀特区</td>
+                        <td></td>
+                        <td></td>
+                        <td>藏品转让</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>预售作品</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-4 w-100 footer-r">
+                <div>
+                    <p class="call">400-8006 045</p>
+                    <p class="time">周一至周日 9：00-22:00</p>
+                    <p class="chat">
+                        <span class="fl">分享到:</span>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bot">
+            <div class="ft-li">
+                <a href="javascript:;">铜师傅首页</a>
+                <a href="javascript:;" class="cen">帮助中心</a>
+                <a href="javascript:;">法律声明</a>
+            </div>
+            <div class="copy">Copyright © 2015 浙ICP备13026271号-1 杭州玺匠文化创意股份有限公司</div>
+            <div class="friendimg">
+                <a target="_blank" href="javascript:;">
+                    <img src="../image/img_54.png-v=v31.png" alt=""/>
+                </a>
+                <a target="_blank" href="javascript:;">
+                    <img src="../image/img_55.png-v=v31.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

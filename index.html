@@ -1,0 +1,768 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>铜师傅</title>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../css/footer.css"/>
+</head>
+<script>
+        $(function(){
+            var index=0;
+            Swidth=1240;
+            timer=null;
+            function nextPage(){
+                if(index>3){index=1;}
+                $('.box').stop(true,false).animate({left:-index*Swidth+'px'},600)
+            }
+            function prevPage(){
+                if(index<1){index=3;}
+                $('.box').stop(true,false).animate({left:-index*Swidth+'px'},600)
+            }
+            $('.next').click(function(){
+                index++;
+                nextPage();
+            });
+            $('.prev').click(function(){
+                index--;
+                prevPage();
+            });
+            setInterval(function(){
+                    index++ ;
+                    nextPage();
+            },3000);
+        })
+    </script>
+<body>
+    <div class="headersize">
+        <div class="header1">
+            <ul class="breadcrumb float-left headersmall bg-white headerleftnav">
+                <li class="breadcrumb-item"><a href="#" class="headergray">关于铜师傅</a></li>
+                <li class="breadcrumb-item"><a href="#" class="headergray">工艺精粹</a></li>
+                <li class="breadcrumb-item"><a href="#" class="headergray">动态</a></li>
+            </ul>
+            <ul class="breadcrumb float-right headersmall bg-white headerrightnav ">
+                <li class="breadcrumb-item"><a target="_blank" href="file:///C:/Users/Hubery/Desktop/Hubery/Project1/tsf1/login.html" class="headergray" >登录</a></li>
+                <li class="breadcrumb-item"><a target="_blank" href="file:///C:/Users/Hubery/Desktop/Hubery/Project1/tsf1/register.html" class="headergray">注册</a></li>
+            </ul>
+        </div>
+    </div> 
+    <div class="clear"></div>
+    <div class="headersize2">
+        <div class="header-mid">
+            <img src="../image/logo.png-v=v31.png"/>
+            <div class="fr header-mr">
+                <input class="searchbox fl"  placeholder="  搜索铜师傅作品" type="text"/>
+                <div class="search fl"></div>
+                <a class="fr shopcar">购物车</a>
+            </div>
+            <div class='clear'></div>
+            <div class='nav'>
+                <div class="left fl">
+                    <a href="javascript:;" class="pro-all">作品分类</a>
+                    <a href="http://localhost:63342/Project1/tsf1/product.html" class="fr">全部作品</a>
+                </div> 
+                <div class="right fr">
+                    <ul class="d-flex justify-content-around list-unstyled">
+                        <li><a href="http://localhost:63342/Project1/tsf1/index.html">首页</a></li>
+                        <li><a href="#">新品上架</a></li>
+                        <li><a href="#">热卖爆品</a></li>
+                        <li><a href="#">限量极品</a></li>
+                        <li><a href="#">铜粉最爱</a></li>
+                        <li><a href="#">铜板</a></li>
+                        <li><a href="#">铜粉部落</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="headersize3">
+        <div class="w-1240">
+            <div class=clear></div>
+            <div class="leftnav1 fl">
+                <ul class="list-unstyled">
+                    <li>
+                        <p><a target="_blank" href="#">佛缘善结</a></p>
+                        <div class="abox">
+                            <a target="_blank" href="#">西方三圣</a>
+                            <a target="_blank" href="#">观音</a>
+                            <a target="_blank" href="#">达摩</a>
+                            <a target="_blank" href="#">沙弥</a>
+                        </div>
+                        <a target="_blank" href="#" class="fr more">更多</a>
+                    </li>
+                    <li>
+                        <p><a target="_blank" href="#">镇宅旺财</a></p>
+                        <div class="abox">
+                            <a target="_blank" href="#">关公</a>
+                            <a target="_blank" href="#">财神</a>
+                            <a target="_blank" href="#">门神</a>
+                            <a target="_blank" href="#">貔貅</a>
+                        </div>
+                        <a target="_blank" href="#" class="fr more">更多</a>
+                    </li>
+                    <li>
+                        <p><a target="_blank" href="#">家居饰品</a></p>
+                        <div class="abox">
+                            <a target="_blank" href="#">人物</a>
+                            <a target="_blank" href="#">动物</a>
+                            <a target="_blank" href="#">植物</a>
+                            <a target="_blank" href="#">建筑</a>
+                        </div>
+                        <a target="_blank" href="#" class="fr more">更多</a>
+                    </li>
+                    <li>
+                        <p><a target="_blank" href="#">日常用品</a></p>
+                        <div class="abox">
+                            <a target="_blank" href="#">香炉香插</a>
+                            <a target="_blank" href="#">文房四宝</a>
+                        </div>
+                        <a target="_blank" href="#" class="fr more">更多</a>
+                    </li>
+                    <li>
+                        <p><a target="_blank" href="#">限量作品</a></p>
+                        <div class="abox">
+                            <a target="_blank" href="#">关公</a>
+                            <a target="_blank" href="#">西方三圣</a>
+                            <a target="_blank" href="#">我爱飞行</a>
+                        </div>
+                        <a target="_blank" href="#" class="fr more">更多</a>
+                    </li>
+                    <li>
+                        <p><a target="_blank" href="#">秒杀特区</a></p>
+                        <div class="abox">
+                            <a target="_blank" href="#">铜葫芦</a>
+                            <a target="_blank" href="#">马到成功</a>
+                            <a target="_blank" href="#">招财金蟾</a>
+                        </div>
+                        <a target="_blank" href="#" class="fr more">更多</a>
+                    </li>
+                    <li class="border-0">
+                        <p><a target="_blank" href="#" class="abox">预售作品</a></p>
+                        <a target="_blank" href="#" class="fr more">更多</a>
+                    </li>
+                </ul>
+                <div class='clear'></div>
+            </div>
+            <div class="container right fr">
+                <div class="carousel" data-ride="carousel"  id="demo">
+                    <div id="banner10" class="carousel-inner">
+                    </div>
+                    <ul clggfgbv ass="carousel-indicators">
+                        <li class="active" data-slide-to="0" data-target="#demo"></li>
+                        <li data-slide-to="1" data-target="#demo"></li>
+                        <li data-slide-to="2" data-target="#demo"></li>
+                    </ul>
+                    <a class="carousel-control-prev" data-slide="prev" href="#demo">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" data-slide="next" href="#demo">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div> 
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <!--新品上架-->
+    <div class="f1 w-1240">
+        <div class="i-wrap1 index-wrap">
+            <div class="box-tit">
+                <h3>新品上架</h3>
+            </div>
+            <div class="list">
+                <div class="bd">
+                    <div class="tempWrap">
+                        <div class="box" style="width: 6200px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: 0px;">
+                            <ul class="d-flex clone" style="float: left; width: 1240px;">
+                                <li>
+                                    <div class="contbox">
+                                        <span class="itemname">
+                                            <a href="#" title="我心向佛之观音【预售】">我心向佛之观音【预售】</a>
+                                        </span>
+                                        <span class="itemprice">
+                                            <i class="price1">3600元</i>
+                                            <i class="price2">799元</i>
+                                        </span>
+                                    <span class="imgbox">
+                                        <a target="_blank" href="#">
+                                            <img src="http://upload.tongshifu.com/2017/06/14/149743039771709tea.jpg" alt="">
+                                        </a>
+                                    </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contbox">
+                                        <span class="itemname">
+                                            <a href="#" title="我心向佛之如来【预售】">我心向佛之如来【预售】</a>
+                                        </span>
+                                        <span class="itemprice">
+                                            <i class="price1">3600元</i>
+                                            <i class="price2">799元</i>
+                                        </span>
+                                    <span class="imgbox">
+                                        <a target="_blank" href="#">
+                                            <img src="http://upload.tongshifu.com/2017/06/14/14974287027259crpph.jpg" alt="">
+                                        </a>
+                                    </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contbox">
+                                        <span class="itemname">
+                                            <a href="#" title="钟馗神威【预售】">钟馗神威【预售】</a>
+                                        </span>
+                                        <span class="itemprice">
+                                            <i class="price1">13000元</i>
+                                            <i class="price2">3699元</i>
+                                        </span>
+                                    <span class="imgbox">
+                                        <a target="_blank" href="#">
+                                            <img src="http://upload.tongshifu.com/2017/04/15/14922442770092tz8dv.jpg" alt="">
+                                        </a>
+                                    </span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="d-flex" style="float: left; width: 1240px; list-style: none">
+                                <li>
+                                    <div class="contbox">
+                                        <span class="itemname">
+                                            <a href="#" title="达摩思禅（倒流香）【预售】">达摩思禅（倒流香）【预售】</a>
+                                        </span>
+                                        <span class="itemprice">
+                                            <i class="price1">3700元</i>
+                                            <i class="price2">1099元</i>
+                                        </span>
+                                        <span class="imgbox">
+                                            <a target="_blank" href="#">
+                                                <img src="http://upload.tongshifu.com/2017/12/18/15135867949105vtjg6.jpg" alt="">
+                                            </a>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contbox">
+                                        <span class="itemname">
+                                            <a href="#" title="灵缇犬【预售】">灵缇犬【预售】</a>
+                                        </span>
+                                        <span class="itemprice">
+                                            <i class="price1">24000元</i>
+                                            <i class="price2">5999元</i>
+                                        </span>
+                                    <span class="imgbox">
+                                        <a target="_blank" href="#">
+                                            <img src="http://upload.tongshifu.com/2017/12/18/151358572251691vdog.jpg" alt="">
+                                        </a>
+                                    </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contbox">
+                                        <span class="itemname">
+                                            <a href="#" title="萌萌的唐马【预售】">萌萌的唐马【预售】</a>
+                                        </span>
+                                        <span class="itemprice">
+                                            <i class="price1">2000元</i>
+                                            <i class="price2">399元</i>
+                                        </span>
+                                    <span class="imgbox">
+                                        <a target="_blank" href="#">
+                                            <img src="http://upload.tongshifu.com/2017/12/18/15135855419402alxmh.jpg" alt="">
+                                        </a>
+                                    </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contbox">
+                                        <span class="itemname">
+                                            <a href="#" title="攀登【预售】">攀登【预售】</a>
+                                        </span>
+                                        <span class="itemprice">
+                                            <i class="price1">2000元</i>
+                                            <i class="price2">499元</i>
+                                        </span>
+                                    <span class="imgbox">
+                                        <a target="_blank" href="#">
+                                            <img src="http://upload.tongshifu.com/2017/12/18/15135841977883mc7a7.jpg" alt="">
+                                        </a>
+                                    </span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="d-flex" style="float: left; width: 1240px;">
+                                <li>
+                                    <div class="contbox">
+                                        <span class="itemname">
+                                            <a href=href="#" title="鎏金珐琅貔貅【预售】">鎏金珐琅貔貅【预售】</a>
+                                        </span>
+                                        <span class="itemprice">
+                                            <i class="price1">40000元</i>
+                                            <i class="price2">11999元</i>
+                                        </span>
+                                    <span class="imgbox">
+                                        <a target="_blank" href="#">
+                                            <img src="http://upload.tongshifu.com/2017/12/18/15135785547526mic2k.jpg" alt="">
+                                        </a>
+                                    </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contbox">
+                                        <span class="itemname">
+                                            <a href="#" title="鎏金珐琅太平有象【预售】">鎏金珐琅太平有象【预售】</a>
+
+                                        </span>
+                                        <span class="itemprice">
+                                            <i class="price1">54000元</i>
+                                            <i class="price2">15999元</i>
+                                        </span>
+                                    <span class="imgbox">
+                                        <a target="_blank" href="#">
+                                            <img src="http://upload.tongshifu.com/2017/12/18/151357783241w08p5.jpg" alt="">
+                                        </a>
+                                    </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contbox">
+                                        <span class="itemname">
+                                            <a href="#" title="鎏金珐琅财神到【预售】">鎏金珐琅财神到【预售】</a>
+                                        </span>
+                                        <span class="itemprice">
+                                            <i class="price1">37000元</i>
+                                            <i class="price2">10999元</i>
+                                        </span>
+                                    <span class="imgbox">
+                                        <a target="_blank" href="#">
+                                            <img src="http://upload.tongshifu.com/2017/12/18/15135762211843xxjhe.jpg" alt="">
+                                        </a>
+                                    </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contbox">
+                                        <span class="itemname">
+                                            <a href="#" title="鎏金珐琅之神勇貔貅【预售】">鎏金珐琅之神勇貔貅【预售】</a>
+                                        </span>
+                                        <span class="itemprice">
+                                            <i class="price1">130000元</i>
+                                            <i class="price2">39999元</i>
+                                        </span>
+                                    <span class="imgbox">
+                                        <a target="_blank" href="#">
+                                            <img src="http://upload.tongshifu.com/2017/06/16/149760743939889nw81.jpg" alt="">
+                                        </a>
+                                    </span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="d-flex" style="float: left; width: 1240px;">
+                                <li>
+                                    <div class="contbox">
+                                        <span class="itemname">
+                                            <a href="#" title="我心向佛之观音【预售】">我心向佛之观音【预售】</a>
+                                        </span>
+                                        <span class="itemprice">
+                                            <i class="price1">3600元</i>
+                                            <i class="price2">799元</i>
+                                        </span>
+                                    <span class="imgbox">
+                                        <a target="_blank" href="#">
+                                            <img src="http://upload.tongshifu.com/2017/06/14/149743039771709tea.jpg" alt="">
+                                        </a>
+                                    </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contbox">
+                                        <span class="itemname">
+                                            <a href="#" title="我心向佛之如来【预售】">我心向佛之如来【预售】</a>
+                                        </span>
+                                        <span class="itemprice">
+                                            <i class="price1">3600元</i>
+                                            <i class="price2">799元</i>
+                                        </span>
+                                    <span class="imgbox">
+                                        <a target="_blank" href="#">
+                                            <img src="http://upload.tongshifu.com/2017/06/14/14974287027259crpph.jpg" alt="">
+                                        </a>
+                                    </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contbox">
+                                        <span class="itemname">
+                                            <a href="#" title="钟馗神威【预售】">钟馗神威【预售】</a>
+                                        </span>
+                                        <span class="itemprice">
+                                            <i class="price1">13000元</i>
+                                            <i class="price2">3699元</i>
+                                        </span>
+                                    <span class="imgbox">
+                                        <a target="_blank" href="#">
+                                            <img src="http://upload.tongshifu.com/2017/04/15/14922442770092tz8dv.jpg" alt="">
+                                        </a>
+                                    </span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="d-flex clone" style="float: left; width: 1240px; list-style: none">
+                                    <li>
+                                        <div class="contbox">
+                                            <span class="itemname">
+                                                <a href="#" title="达摩思禅（倒流香）【预售】">达摩思禅（倒流香）【预售】</a>
+                                            </span>
+                                            <span class="itemprice">
+                                                <i class="price1">3700元</i>
+                                                <i class="price2">1099元</i>
+                                            </span>
+                                            <span class="imgbox">
+                                                <a target="_blank" href="#">
+                                                    <img src="http://upload.tongshifu.com/2017/12/18/15135867949105vtjg6.jpg" alt="">
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="contbox">
+                                            <span class="itemname">
+                                                <a href="#" title="灵缇犬【预售】">灵缇犬【预售】</a>
+                                            </span>
+                                            <span class="itemprice">
+                                                <i class="price1">24000元</i>
+                                                <i class="price2">5999元</i>
+                                            </span>
+                                        <span class="imgbox">
+                                            <a target="_blank" href="#">
+                                                <img src="http://upload.tongshifu.com/2017/12/18/151358572251691vdog.jpg" alt="">
+                                            </a>
+                                        </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="contbox">
+                                            <span class="itemname">
+                                                <a href="#" title="萌萌的唐马【预售】">萌萌的唐马【预售】</a>
+                                            </span>
+                                            <span class="itemprice">
+                                                <i class="price1">2000元</i>
+                                                <i class="price2">399元</i>
+                                            </span>
+                                        <span class="imgbox">
+                                            <a target="_blank" href="#">
+                                                <img src="http://upload.tongshifu.com/2017/12/18/15135855419402alxmh.jpg" alt="">
+                                            </a>
+                                        </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="contbox">
+                                            <span class="itemname">
+                                                <a href="#" title="攀登【预售】">攀登【预售】</a>
+                                            </span>
+                                            <span class="itemprice">
+                                                <i class="price1">2000元</i>
+                                                <i class="price2">499元</i>
+                                            </span>
+                                        <span class="imgbox">
+                                            <a target="_blank" href="#">
+                                                <img src="http://upload.tongshifu.com/2017/12/18/15135841977883mc7a7.jpg" alt="">
+                                            </a>
+                                        </span>
+                                        </div>
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <span class="prev butn"></span>
+                <span class="next butn"></span>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <!--热卖爆品-->
+    <div class="f2 w-1240  index-wrap">
+        <div class="box-tit">
+            <h3>热卖爆品</h3>
+            <a target="_blank" href="#" class="more abs">更多</a>
+        </div>
+        <div class="row bg-white">
+            <div class="col-9">
+                <ul class="d-flex flex-wrap w-100" id='cont'>
+                </ul>
+            </div>
+            <div class="col-3 recom-list">
+                <div class="recombox recomlist w-100">
+                    <div class="contleft fl">
+                        <a target="_blank" href="#">
+                            <span class="font-name"> 造化入铜</span>
+						    <span class="word">
+							    <p>铜师傅微电影</p>
+						    </span>
+                        </a>
+                    </div>
+				<span class="fr img">
+                    <a target="_blank" href="http://www.tongshifu.com/news/info/6">
+                        <img src="http://upload.tongshifu.com/2015/07/08/14363530323626utx6d.jpg " width="92px" alt="">
+                    </a>
+				</span>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="recombox recomlist w-100">
+                    <div class="contleft fl">
+                        <a target="_blank" href="#">
+                            <span class="font-name"> 造化入铜</span>
+						    <span class="word">
+							    <p>铜师傅微电影</p>
+						    </span>
+                        </a>
+                    </div>
+				<span class="fr img">
+                    <a target="_blank" href="http://www.tongshifu.com/news/info/6">
+                        <img src="http://upload.tongshifu.com/2015/07/08/14363530323626utx6d.jpg " width="92px" alt="">
+                    </a>
+				</span>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="recombox recomlist w-100 box1">
+                    <div class=" contleft fl">
+                        <a target="_blank" href="#">
+                            <span class="font-name"> 【公告专栏】</span>
+						<span class="word">
+							<p>“我与铜师傅的故事”首届征...</p> 
+						</span>
+                        </a>
+                    </div>
+				<span class="fr img">
+                    <a target="_blank" href="#">
+                        <img src="../image/14396326856214dz2n5.jpg " width="92px" alt="">
+                    </a>
+				</span>
+                </div>
+                <div class="bot-contact-list w-100">
+                    <a target="_blank" class="bt" href="http://www.tongshifu.com/about/join">在线服务</a>
+                    <a target="_blank" class="bt" href="http://www.tongshifu.com/about/join">加入我们</a>
+                    <a target="_blank" class="bt" href="http://www.tongshifu.com/serve/download">相关下载</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--限量极品-->
+    <div class="f3 w-1240">
+        <div class="i-wrap1 index-wrap">
+            <div class="box-tit">
+                <h3>限量极品</h3>
+                <a target="_blank" href="#" class="more abs">更多</a>
+            </div>
+            <div class="list">
+                <div class="bg-white">
+                    <ul class="d-flex justify-content-around">
+                        <li>
+                            <div class="contbox">
+                                <span class="itemname">
+                                    <a href="#" title="西方三圣（彩绘版）">西方三圣（彩绘版）</a>
+                                </span>
+                                <span class="itemprice">
+                                    <i class="price1">330000元</i>
+                                    <i class="price2">119999元</i>
+                                </span>
+                                <span class="imgbox">
+                                    <a target="_blank" href="#">
+                                        <img src="../image/14375470414985hnxi0.jpg" alt="">
+                                    </a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contbox">
+                                <span class="itemname">
+                                    <a href="#" title="韦陀菩萨【预售】">韦陀菩萨【预售】</a>
+                                </span>
+                                <span class="itemprice">
+                                    <i class="price1">57000元</i>
+                                    <i class="price2">15999元</i>
+                                </span>
+                                <span class="imgbox">
+                                    <a target="_blank" href="#">
+                                        <img src="../image/14974322868978bgzrx.jpg" alt="">
+                                    </a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contbox">
+                                <span class="itemname">
+                                    <a href="#" title="一念一生【预售】">一念一生【预售】</a>
+                                </span>
+                                <span class="itemprice">
+                                    <i class="price1">15000元</i>
+                                    <i class="price2">3999元</i>
+                                </span>
+                                <span class="imgbox">
+                                    <a target="_blank" href="#">
+                                        <img src="../image/15060734570868rgo33.jpg" alt="">
+                                    </a>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contbox">
+                                <span class="itemname">
+                                    <a href="#" title="威震山河【预售】">威震山河【预售】</a>
+                                </span>
+                                <span class="itemprice">
+                                    <i class="price1">17000元</i>
+                                    <i class="price2">3999元</i>
+                                </span>
+                                <span class="imgbox">
+                                    <a target="_blank" href="#">
+                                        <img src="../image/150607828303039jj8a.jpg" alt="">
+                                    </a>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--铜粉最爱-->
+    <div class="f4 w-1240">
+        <div class="i-wrap1 index-wrap">
+            <div class="box-tit">
+                <h3>铜粉最爱</h3>
+                <a target="_blank" href="#" class="more abs">更多</a>
+            </div>
+            <div class="row bg-white list">
+                <div class="col-9 bg-white">
+                    <ul class="d-flex flex-wrap w-100 bg-white" id='cont1'>
+
+                    </ul>
+                </div>
+                <div class="col-3 bg-white contbox2">
+                    <div class="w-100">
+                        <div class="card1">
+                            <span class="ari">HOT</span>热卖作品排行
+                        </div>
+                        <ul class="bg-white" id='cont3'>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <!--尾部-->
+    <div class="footer">
+        <div class="w-1240">
+            <div class="mb-4 border-bottom footer-top">
+                <ul class="list-unstyled d-flex justify-content-around text-center">
+                    <li><img src="../image/ico_13.png-v=v31.png"/><p class="mt-3">7天无理由退货</p></li>
+                    <li><img src="../image/ico_14.png-v=v31.png"/><p class="mt-3">15天免费换货</p></li>
+                    <li><img src="../image/ico_15.png-v=v31.png"/><p class="mt-3">满500元包邮</p></li>
+                    <li><img src="../image/ico_16.png-v=v31.png"/><p class="mt-3">铜板</p></li>
+                </ul>
+            </div>
+            <div class="row footer-mid">
+                <div class="col-8">
+                    <table class="w-100 text-center">
+                        <tr>
+                            <th>作品展厅</th>
+                            <th>尊享服务</th>
+                            <th>品牌发展</th>
+                            <th>铜粉部落</th>
+                            <th>关于我们</th>
+                        </tr>
+                        <tr>
+                            <td>佛缘善结</td>
+                            <td>售后政策</td>
+                            <td>最新动态</td>
+                            <td>公告专栏</td>
+                            <td>了解我们</td>
+                        </tr>
+                        <tr>
+                            <td>镇宅旺财</td>
+                            <td>自助服务</td>
+                            <td>关于铜器</td>
+                            <td>活动预告</td>
+                            <td>加入我们</td>
+                        </tr>
+                        <tr>
+                            <td>家居饰品</td>
+                            <td>相关下载</td>
+                            <td>精湛工艺</td>
+                            <td>有奖竞猜</td>
+                            <td>联系我们</td>
+                        </tr>
+                        <tr>
+                            <td>日常用品</td>
+                            <td></td>
+                            <td>保养须知</td>
+                            <td>铜粉论坛</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>限量作品</td>
+                            <td></td>
+                            <td></td>
+                            <td>铜道中人</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>秒杀特区</td>
+                            <td></td>
+                            <td></td>
+                            <td>藏品转让</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>预售作品</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-4 w-100 footer-r">
+                    <div>
+                        <p class="call">400-8006 045</p>
+                        <p class="time">周一至周日 9：00-22:00</p>
+                        <p class="chat">
+                            <span class="fl">分享到:</span>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bot">
+                <div class="ft-li">
+                    <a href="javascript:;">铜师傅首页</a>
+                    <a href="javascript:;" class="cen">帮助中心</a>
+                    <a href="javascript:;">法律声明</a>
+                </div>
+                <div class="copy">Copyright © 2015 浙ICP备13026271号-1 杭州玺匠文化创意股份有限公司</div>
+                <div class="friendimg">
+                    <a target="_blank" href="javascript:;">
+                        <img src="../image/img_54.png-v=v31.png" alt=""/>
+                    </a>
+                    <a target="_blank" href="javascript:;">
+                        <img src="../image/img_55.png-v=v31.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/index.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+</body>
+</html>

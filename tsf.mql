@@ -1,0 +1,96 @@
+SET NAMES UTF8;
+DROP DATABASE IF EXISTS tissot;
+CREATE DATABASE tissot CHARSET=UTF8;
+USE tissot;
+
+/**产品详情**/
+CREATE TABLE tit_product(
+  pid INT PRIMARY KEY AUTO_INCREMENT,
+  classify_id INT,						     #所属型号家族编号
+  title VARCHAR(128),              #主标题
+  subtitle VARCHAR(128),           #副标题
+	collection_  DECIMAL(10,2),  #收藏价格
+    DECIMAL(10,2),             #价格
+  spec VARCHAR(64),                #规格/颜色
+  pname VARCHAR(32),               #商品名称
+  details VARCHAR(1024),           #产品详细说明
+  shelf_time BIGINT,               #上架时间
+  sold_count INT,                  #已售出的数量
+  is_onsale BOOLEAN                #是否促销中
+);
+
+/**产品详情**/
+INSERT INTO tit_product VALUES
+
+/**用户信息**/
+CREATE TABLE user(
+  uid INT PRIMARY KEY AUTO_INCREMENT,
+  uname VARCHAR(32),
+  upwd VARCHAR(32),
+  email VARCHAR(64),
+  phone VARCHAR(16),
+  user_name VARCHAR(32),      #用户名，如王小明
+  gender INT                  #性别  0-女  1-男
+);
+
+/**用户信息**/
+INSERT INTO user VALUES
+(NULL,'xixi','123456','xixi3456@163.com',12321233232,'王希',1),
+(NULL,'xinxin','123456','xinxin3456@163.com',12332233232,'陈鑫',0),
+(NULL,'langlang','123456','lang3456@163.com',13521233232,'王朗',1),
+(NULL,'pingping','123456','ping3456@163.com',12321233222,'郎平',0),
+(NULL,'zhuzhu','123456','zhuzhu3456@163.com',12321242232,'付珠',0),
+(NULL,'liangliang','123456','liang3456@163.com',12321537878,'贾亮',1),
+(NULL,'miaom','123456','miao3456@163.com',12334536532,'李子妙',0);
+
+/**购物车条目**/
+CREATE TABLE shoppingcart(
+  iid INT PRIMARY KEY AUTO_INCREMENT,
+  user_id INT,      #用户编号
+  product_id INT,   #商品编号
+  count INT,        #购买数量
+  is_checked BOOLEAN #是否已勾选，确定购买
+);
+
+/****首页轮播广告商品****/
+CREATE TABLE imglist(
+  id INT PRIMARY KEY AUTO_INCREMENT,
+    VARCHAR(128)
+);
+
+/**轮播**/
+insert into imglist values
+ (1,'http //127.0.0.1 3000/img/index1/banner1-md.jpg'),
+ (2,'http //127.0.0.1 3000/img/index1/banner2-md.jpg'),
+ (3,'http //127.0.0.1 3000/img/index1/banner3-md.jpg'),
+ (4,'http //127.0.0.1 3000/img/index1/banner4-md.jpg')
+
+/****首页商品****/
+CREATE TABLE index_product(
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  title VARCHAR(64),
+  subtitle VARCHAR(128),
+    DECIMAL(10,2),
+    VARCHAR(128)
+);
+INSERT INTO index_product VALUES
+(NULL,'天梭力洛克系列皮带80机芯机械男表','T0064071603300','4600','http //127.0.0.1 3000/img/index1/t0064071603300_1.png'),
+(NULL,'天梭力洛克系列皮带80机芯机械男表','T0064071605300','4600','http //127.0.0.1 3000/img/index1/t00640716053001-3.png'),
+(NULL,'天梭力洛克系列皮带80机芯机械男表','T0064071103300','4200','http //127.0.0.1 3000/img/index1/t0064071103300_4_02_1_1.png'),
+(NULL,'天梭力洛克系列皮带80机芯机械女表','T41118333','4450','http //127.0.0.1 3000/img/index1/t41118333_1.png'),
+(NULL,'天梭俊雅系列皮带石英男表','T0636101603700',  '2200',  'http //127.0.0.1 3000/img/index1/t0636101603700_1_1.png'),
+(NULL,'天梭弗拉明戈系列石英女表','T0942101111100',  '2500',  'http //127.0.0.1 3000/img/index1/t0942101111100_1.png'),
+(NULL,'天梭魅时系列钢带石英男表','T1096101107700',  '2200',  'http //127.0.0.1 3000/img/index1/t109.610.11.077.00_4.png'),
+(NULL,'天梭魅时系列钢带石英女表','T1092103303100',  '2300',  'http //127.0.0.1 3000/img/index1/t1092103303100_1.png'),
+(NULL,'天梭杜鲁尔系列皮带80机芯机械男表','T0064071603300',  '5600',  'http //127.0.0.1 3000/img/index1/t0994071604800_4.png'),
+(NULL,'天梭杜鲁尔系列钢带80机芯机械女表','T0064071605300',  '6050',  'http //127.0.0.1 3000/img/index1/t0992071104800_2.png'),
+(NULL,'天梭恒意系列皮带机械男表','T0064071103300',  '3850',  'http //127.0.0.1 3000/img/index1/t1092101603300_b1.png'),
+(NULL,'天梭魅时系列钢带机械男表', 'T41118333',  '3600',  'http //127.0.0.1 3000/img/index1/t0064071103300_4_02_1_1.png'),
+(NULL,'天梭俊雅系列皮带石英男表', 'T0636101603800',  '2200',  'http //127.0.0.1 3000/img/index1/t0636101603800_1.png'),
+(NULL,' 天梭速驰系列石英皮革男表', 'T1166173605700',  '2700',  'http //127.0.0.1 3000/img/index1/t1166173605700-25.png'),
+(NULL,' 天梭魅时系列皮带机械男表', 'T1094071605100',  '3200',  'http //127.0.0.1 3000/img/index1/t1094071605100-25_1.png'),
+(NULL,' 天梭魅时系列皮带石英女表', 'T1092101603300',  '1700',  'http //127.0.0.1 3000/img/index1/t1092101603300_b1.png'),
+(NULL,' 天梭俊雅系列钢带石英男表', 'T0636101103800',  '2550',  'http //127.0.0.1 3000/img/index1/t0636101103800_1.png'),
+(NULL,' 天梭魅时系列钢带石英女表', 'T1092102203100',  '2200',  'http //127.0.0.1 3000/img/index1/t1092102203100_1.png'),
+(NULL,' 天梭杜鲁尔系列钢带80机芯机械男表', 'T0994071104800',  '6050',  'http //127.0.0.1 3000/img/index1/t1094071605100-25_1.png'),
+(NULL,'  天梭弗拉明戈系列钢带石英女表', 'T0942101112100',  '2500',  'http //127.0.0.1 3000/img/index1/t0942101112100_1.png')

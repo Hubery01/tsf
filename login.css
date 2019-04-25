@@ -1,0 +1,122 @@
+body,html{
+    position: relative;
+    min-width: 1240px;
+    background:url('../image/bg_body.jpg') repeat center;
+}
+.fr{
+    float:right;
+}
+.w-1240{
+    width:1240px;
+    margin:0 auto;
+}
+.w-960{
+    width:960px;
+    margin:0 auto;
+}
+.login-info{
+    padding-top:100px;
+}
+.login-logo{
+    text-align: center;
+}
+.login-center {
+    width: 100%;
+    background-color: #f7f6f5;
+    margin-top: 40px;
+    padding-bottom: 50px;
+}
+.login-center .titbox{
+    width: 100%;
+    text-align: center;
+    line-height: 67px;
+    padding-top: 15px;
+    font-size: 18px;
+    color: #666;
+    border-bottom: 2px solid #ebe6e3;
+}
+.login-center .contwrap {
+    width: 372px;
+    margin: 50px auto 0;
+}
+.login-center input:hover{
+    outline:0;
+}
+.login-center .mid-body input{
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.login-center .mid-body input:active{
+    outline:0;
+}
+.mid{
+    font-size: 14px;
+    height: 15px;
+    padding: 25px 0 25px 22px;
+    border: 1px solid #d7d7d7;
+    background-color: #fff;
+    color: #8a8a8a;
+    line-height: 14px;
+}
+.mid-big{
+    width: 346px;
+}
+.login-center .mid-body{
+    width:370px;
+    margin:50px auto 0;
+}
+.login-center .mid-body #login{
+    width: 370px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    background-color: #88664e;
+    margin-top:20px; 
+}
+.login-center .mid-body .reg{
+    width: 369px;
+    height: 53px;
+    text-align: center;
+    border: 1px solid #d9d8d8;
+    border-radius: 2px;
+    color: #666;
+    background-color: #f7f6f5;
+    font-size: 16px;
+    margin-top:20px; 
+}
+.login-center .mid-body a{
+    text-decoration: none;
+    font-size:14px;
+    color:#b7b6b5;
+}
+.login-center .mid-body a:hover{
+    color:#666;
+}
+.footer{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom:100px;
+  }
+.footer .copy {
+    line-height: 25px;
+    width: 100%;
+    font-size: 12px;
+    color: #aeaeae;
+}
+.footer .footer-bot{
+    font-size: 14px;
+    color: #c2c1c1;
+    line-height: 28px;
+    width: 100%;
+}
+.footer .footer-bot .line{
+    display: inline-block;
+    width: 25px;
+    text-align: center;
+}
+.footer .footer-bot a{
+    text-decoration:none;
+    color: #333;
+}

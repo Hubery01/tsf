@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/header.css"/>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../css/footer.css"/>
+</head>
+<script>
+    $(function(){
+        var index=0;
+        Swidth=1240;
+        timer=null;
+        function nextPage(){
+            if(index>4){index=0;}
+            $('.box').stop(true,false).animate({left:-index*Swidth+'px'},600)
+        }
+        function prevPage(){
+            if(index<0){index=4;}
+            $('.box').stop(true,false).animate({left:-index*Swidth+'px'},600)
+        }
+        $('.next').click(function(){
+            index++;
+            nextPage();
+        });
+        $('.prev').click(function(){
+            index--;
+            prevPage();
+        });
+        setInterval(function(){
+				index++ ;
+				nextPage();
+		},4000);
+    })
+</script>
+<body>
+    <div class="f1 w-1240">
+        <div class="i-wrap1 index-wrap">
+            <div class="box-tit">
+                <h3>新品上架</h3>
+            </div>
+            <div class="list">
+                <div class="bd">
+                    <div class="tempWrap">
+                        <div class="box" style="width:6200px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: 0px;">
+                            <ul class="d-flex" style="float: left; width: 1240px; list-style: none">
+                                <li>
+                                    <div class="contbox">
+                                        <span class="itemname">
+                                            <a href="#" title="达摩思禅（倒流香）【预售】">达摩思禅（倒流香）【预售】</a>
+                                        </span>
+                                        <span class="itemprice">
+                                            <i class="price1">3700元</i>
+                                            <i class="price2">1099元</i>
+                                        </span>
+                                        <span class="imgbox">
+                                            <a target="_blank" href="#">
+                                                <img src="http://upload.tongshifu.com/2017/12/18/15135867949105vtjg6.jpg" alt="">
+                                            </a>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contbox">
+                                        <span class="itemname">
+                                            <a href="#" title="灵缇犬【预售】">灵缇犬【预售】</a>
+                                        </span>
+                                        <span class="itemprice">
+                                            <i class="price1">24000元</i>
+                                            <i class="price2">5999元</i>
+                                        </span>
+                                    <span class="imgbox">
+                                        <a target="_blank" href="#">
+                                            <img src="http://upload.tongshifu.com/2017/12/18/151358572251691vdog.jpg" alt="">
+                                        </a>
+                                    </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contbox">
+                                        <span class="itemname">
+                                            <a href="#" title="萌萌的唐马【预售】">萌萌的唐马【预售】</a>
+                                        </span>
+                                        <span class="itemprice">
+                                            <i class="price1">2000元</i>
+                                            <i class="price2">399元</i>
+                                        </span>
+                                    <span class="imgbox">
+                                        <a target="_blank" href="#">
+                                            <img src="http://upload.tongshifu.com/2017/12/18/15135855419402alxmh.jpg" alt="">
+                                        </a>
+                                    </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contbox">
+                                        <span class="itemname">
+                                            <a href="#" title="攀登【预售】">攀登【预售】</a>
+                                        </span>
+                                        <span class="itemprice">
+                                            <i class="price1">2000元</i>
+                                            <i class="price2">499元</i>
+                                        </span>
+                                    <span class="imgbox">
+                                        <a target="_blank" href="#">
+                                            <img src="http://upload.tongshifu.com/2017/12/18/15135841977883mc7a7.jpg" alt="">
+                                        </a>
+                                    </span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="d-flex" style="float: left; width: 1240px;">
+                                <li>
+                                    <div class="contbox">
+                                        <span class="itemname">
+                                            <a href=href="#" title="鎏金珐琅貔貅【预售】">鎏金珐琅貔貅【预售】</a>
+                                        </span>
+                                        <span class="itemprice">
+                                            <i class="price1">40000元</i>
+                                            <i class="price2">11999元</i>
+                                        </span>
+                                    <span class="imgbox">
+                                        <a target="_blank" href="#">
+                                            <img src="http://upload.tongshifu.com/2017/12/18/15135785547526mic2k.jpg" alt="">
+                                        </a>
+                                    </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contbox">
+                                        <span class="itemname">
+                                            <a href="#" title="鎏金珐琅太平有象【预售】">鎏金珐琅太平有象【预售】</a>
+
+                                        </span>
+                                        <span class="itemprice">
+                                            <i class="price1">54000元</i>
+                                            <i class="price2">15999元</i>
+                                        </span>
+                                    <span class="imgbox">
+                                        <a target="_blank" href="#">
+                                            <img src="http://upload.tongshifu.com/2017/12/18/151357783241w08p5.jpg" alt="">
+                                        </a>
+                                    </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contbox">
+                                        <span class="itemname">
+                                            <a href="#" title="鎏金珐琅财神到【预售】">鎏金珐琅财神到【预售】</a>
+                                        </span>
+                                        <span class="itemprice">
+                                            <i class="price1">37000元</i>
+                                            <i class="price2">10999元</i>
+                                        </span>
+                                    <span class="imgbox">
+                                        <a target="_blank" href="#">
+                                            <img src="http://upload.tongshifu.com/2017/12/18/15135762211843xxjhe.jpg" alt="">
+                                        </a>
+                                    </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contbox">
+                                        <span class="itemname">
+                                            <a href="#" title="鎏金珐琅之神勇貔貅【预售】">鎏金珐琅之神勇貔貅【预售】</a>
+                                        </span>
+                                        <span class="itemprice">
+                                            <i class="price1">130000元</i>
+                                            <i class="price2">39999元</i>
+                                        </span>
+                                    <span class="imgbox">
+                                        <a target="_blank" href="#">
+                                            <img src="http://upload.tongshifu.com/2017/06/16/149760743939889nw81.jpg" alt="">
+                                        </a>
+                                    </span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="d-flex" style="float: left; width: 1240px;">
+                                <li>
+                                    <div class="contbox">
+                                        <span class="itemname">
+                                            <a href="#" title="我心向佛之观音【预售】">我心向佛之观音【预售】</a>
+                                        </span>
+                                        <span class="itemprice">
+                                            <i class="price1">3600元</i>
+                                            <i class="price2">799元</i>
+                                        </span>
+                                    <span class="imgbox">
+                                        <a target="_blank" href="#">
+                                            <img src="http://upload.tongshifu.com/2017/06/14/149743039771709tea.jpg" alt="">
+                                        </a>
+                                    </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contbox">
+                                        <span class="itemname">
+                                            <a href="#" title="我心向佛之如来【预售】">我心向佛之如来【预售】</a>
+                                        </span>
+                                        <span class="itemprice">
+                                            <i class="price1">3600元</i>
+                                            <i class="price2">799元</i>
+                                        </span>
+                                    <span class="imgbox">
+                                        <a target="_blank" href="#">
+                                            <img src="http://upload.tongshifu.com/2017/06/14/14974287027259crpph.jpg" alt="">
+                                        </a>
+                                    </span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="contbox">
+                                        <span class="itemname">
+                                            <a href="#" title="钟馗神威【预售】">钟馗神威【预售】</a>
+                                        </span>
+                                        <span class="itemprice">
+                                            <i class="price1">13000元</i>
+                                            <i class="price2">3699元</i>
+                                        </span>
+                                    <span class="imgbox">
+                                        <a target="_blank" href="#">
+                                            <img src="http://upload.tongshifu.com/2017/04/15/14922442770092tz8dv.jpg" alt="">
+                                        </a>
+                                    </span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="d-flex clone" style="float: left; width: 1240px; list-style: none">
+                                    <li>
+                                        <div class="contbox">
+                                            <span class="itemname">
+                                                <a href="#" title="达摩思禅（倒流香）【预售】">达摩思禅（倒流香）【预售】</a>
+                                            </span>
+                                            <span class="itemprice">
+                                                <i class="price1">3700元</i>
+                                                <i class="price2">1099元</i>
+                                            </span>
+                                            <span class="imgbox">
+                                                <a target="_blank" href="#">
+                                                    <img src="http://upload.tongshifu.com/2017/12/18/15135867949105vtjg6.jpg" alt="">
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="contbox">
+                                            <span class="itemname">
+                                                <a href="#" title="灵缇犬【预售】">灵缇犬【预售】</a>
+                                            </span>
+                                            <span class="itemprice">
+                                                <i class="price1">24000元</i>
+                                                <i class="price2">5999元</i>
+                                            </span>
+                                        <span class="imgbox">
+                                            <a target="_blank" href="#">
+                                                <img src="http://upload.tongshifu.com/2017/12/18/151358572251691vdog.jpg" alt="">
+                                            </a>
+                                        </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="contbox">
+                                            <span class="itemname">
+                                                <a href="#" title="萌萌的唐马【预售】">萌萌的唐马【预售】</a>
+                                            </span>
+                                            <span class="itemprice">
+                                                <i class="price1">2000元</i>
+                                                <i class="price2">399元</i>
+                                            </span>
+                                        <span class="imgbox">
+                                            <a target="_blank" href="#">
+                                                <img src="http://upload.tongshifu.com/2017/12/18/15135855419402alxmh.jpg" alt="">
+                                            </a>
+                                        </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="contbox">
+                                            <span class="itemname">
+                                                <a href="#" title="攀登【预售】">攀登【预售】</a>
+                                            </span>
+                                            <span class="itemprice">
+                                                <i class="price1">2000元</i>
+                                                <i class="price2">499元</i>
+                                            </span>
+                                        <span class="imgbox">
+                                            <a target="_blank" href="#">
+                                                <img src="http://upload.tongshifu.com/2017/12/18/15135841977883mc7a7.jpg" alt="">
+                                            </a>
+                                        </span>
+                                        </div>
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <span class="prev butn"></span>
+                <span class="next butn"></span>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
